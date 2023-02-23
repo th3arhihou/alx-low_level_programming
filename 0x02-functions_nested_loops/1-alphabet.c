@@ -2,18 +2,15 @@
 /**
  * print_alphabet - entry point
  * Description - prints all alphabet, in lowercase, followed by a new line
- * Return
+ * Return: 0
  */
 void print_alphabet(void)
 {
-	char chr;
+	int i;
 
-	chr = 'a';
-
-	while (chr <= 'z')
+	for (i = '97'; i<=122; i++)
 	{
-		_putchar(chr);
-		chr++;
+		_putchar(i);
 	}
 
 	_putchar('\n');
